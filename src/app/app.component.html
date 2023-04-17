@@ -1,3 +1,5 @@
-<GridLayout>
-  <page-router-outlet></page-router-outlet>
-</GridLayout>
+<StackLayout>
+  <Button text="Lock Portrait" (tap)="setOrientation('portrait', true)"></Button>
+  <Button text="Lock Landscape" (tap)="setOrientation('landscape', true)"></Button>
+  <Button text="Unlock Orientation" (tap)="setOrientation('any', false)"></Button>
+</StackLayout>
